@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度なTo-Doリスト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- パスワード入力セクション -->
+    <div id="password-section" class="password-section">
+        <h2>パスワードを入力</h2>
+        <input type="password" id="password-input" placeholder="パスワードを入力">
+        <button id="password-submit">送信</button>
+        <p id="password-error" style="color: red; display: none;">パスワードが間違っています。再試行してください。</p>
+    </div>
+
+    <!-- To-Doリストのメインセクション -->
+    <div id="todo-section" class="container" style="display: none;">
+        <header>
+            <h1>高度なTo-Doリスト</h1>
+        </header>
+        
+        <div class="todo-app">
+            <!-- タスク追加セクション -->
+            <input type="text" id="new-task" placeholder="タスク名を入力">
+            <input type="date" id="task-deadline" placeholder="期限を設定">
+            
+            <select id="task-priority">
+                <option value="low">低優先度</option>
+                <option value="medium">中優先度</option>
+                <option value="high">高優先度</option>
+            </select>
+
+            <select id="task-category">
+                <option value="work">仕事</option>
+                <option value="personal">プライベート</option>
+            </select>
+
+            <button id="add-task">タスク追加</button>
+            
+            <!-- タスク検索セクション -->
+            <input type="text" id="search-task" placeholder="タスクを検索...">
+            <button id="clear-tasks">すべてのタスクをクリア</button>
+
+            <!-- カテゴリー選択 -->
+            <select id="filter-category">
+                <option value="all">すべてのカテゴリー</option>
+                <option value="work">仕事</option>
+                <option value="personal">プライベート</option>
+            </select>
+
+            <!-- タスクリスト表示セクション -->
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
