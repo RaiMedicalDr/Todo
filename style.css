@@ -1,0 +1,144 @@
+/* 基本のスタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* 幅を少し狭くしました */
+    padding: 15px; /* パディングを減らしました */
+}
+
+header h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 15px; /* マージンを調整 */
+}
+
+/* To-Doリストのレイアウト */
+.todo-app {
+    background-color: #fff;
+    padding: 15px; /* パディングを減らしました */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 影を少し軽くしました */
+}
+
+input[type="text"], input[type="date"], select {
+    width: calc(100% - 40px); /* 幅を調整 */
+    padding: 8px; /* パディングを調整 */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem; /* フォントサイズを少し小さくしました */
+}
+
+button {
+    padding: 8px; /* パディングを減らしました */
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem; /* フォントサイズを調整 */
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+#task-list {
+    list-style-type: none;
+    margin-top: 15px; /* マージンを調整 */
+}
+
+#task-list li {
+    background-color: #f9f9f9;
+    padding: 12px; /* パディングを減らしました */
+    border-radius: 5px;
+    margin-bottom: 8px; /* マージンを調整 */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 影を軽くしました */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list li:nth-child(odd) {
+    background-color: #e9f0f5;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+button.delete {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 5px 8px; /* パディングを調整 */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.delete:hover {
+    background-color: #ff4a4a;
+}
+
+button.complete {
+    background-color: #4CAF50;
+    border: none;
+    padding: 5px 8px; /* パディングを調整 */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.complete:hover {
+    background-color: #45a049;
+}
+
+#search-task {
+    width: calc(100% - 40px); /* 幅を調整 */
+    padding: 8px; /* パディングを調整 */
+    margin-bottom: 15px; /* マージンを調整 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.password-section {
+    text-align: center;
+    margin-top: 40px; /* マージンを調整 */
+}
+
+.password-section input {
+    padding: 8px; /* パディングを調整 */
+    width: 180px; /* 幅を調整 */
+    margin: 8px; /* マージンを調整 */
+}
+
+.password-section button {
+    padding: 8px; /* パディングを調整 */
+    cursor: pointer;
+}
+
+.container {
+    max-width: 400px; /* コンテナの幅をさらに狭くしました */
+    margin: 0 auto;
+    text-align: center;
+}
